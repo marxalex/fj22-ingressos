@@ -17,7 +17,6 @@ public class Sessao {
 	@Id
 	@GeneratedValue
 	private Integer id;
-	private LocalTime horario;
 	
 	@ManyToOne
 	private Sala sala;
@@ -25,6 +24,7 @@ public class Sessao {
 	@ManyToOne
 	private Filme filme;
 	
+	private LocalTime horario;
 	private BigDecimal preco;
 	
 	/**
