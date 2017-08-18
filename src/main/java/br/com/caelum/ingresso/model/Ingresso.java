@@ -55,4 +55,8 @@ public class Ingresso {
 		return lugar;
 	}
 
+	public TipoDeIngresso getTipoDeIngresso() {
+		return tipoDeIngresso;
+	}
+
 }
