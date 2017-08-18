@@ -182,7 +182,7 @@
                     checkbox.checked = true;
 					img.classList.add("escolhido");
 					img.classList.remove("disponivel");
-                }else{
+                } else {
                     var row  = document.querySelector("#"+linhaId);
 
                     checkbox.checked = false;
