@@ -38,5 +38,17 @@ public class Carrinho {
 		return ingressos.stream().map(Ingresso::getPreco).reduce(BigDecimal::add).orElse(BigDecimal.ZERO);
 		
 	}
+	
+	public void Clear() {
+		
+		ingressos = new ArrayList<>();
+		
+	}
+	
+	public Compra toCompra() {
+		
+		return new Compra(ingressos);
+		
+	}
 
 }
